@@ -19,7 +19,7 @@ model_dir: model/${path}
 img_prefix:
 img_suffix:
 atlas: True
-atlas_methods: t1map
+atlas_methods: pca
 multichannel: False
 in_order: True
 
@@ -27,7 +27,7 @@ in_order: True
 gpu: 0
 batch_size: 1
 epochs: 20
-steps_per_epoch: 10
+steps_per_epoch: 1
 load_model: False
 model_path: model/${path}/200.pt
 initial_epoch: 0
